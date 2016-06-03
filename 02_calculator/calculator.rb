@@ -13,3 +13,21 @@ def sum(nums = [])
     end
     sum
 end
+
+def multiply(nums = [])
+    total = 1
+    nums.map { |num| total *= num }
+    total
+end
+
+def power(a, b)
+    a**b
+end
+
+def factorial(a)
+    if a <= 1
+        1
+    else
+        a * factorial(a - 1)
+    end
+end
